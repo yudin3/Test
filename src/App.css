@@ -1,0 +1,175 @@
+html{
+  font-size: 62.5%;
+}
+
+@font-face{
+  font-family: "Roboto";
+  src: url(fonts/Roboto-Regular.ttf);
+}
+
+body {
+  font-family: "Roboto";
+  margin: 0;
+  background: linear-gradient(to right,#4943CD,#900793);
+}
+
+.title{
+  margin: 0;
+}
+
+.section{
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  padding: 1rem 1.2rem 5rem;
+  background-color: #E5E5E5;
+}
+
+.main-container{
+  width: 1366px;
+  margin: 0 auto;
+}
+
+.grid-container{
+  padding-left: 10rem;
+  display: grid;
+  grid-template-areas: 
+  "sorting sorting"
+  "filters cards";
+  grid-template-columns: 28rem 91rem ;
+  grid-template-rows: auto auto ;
+  grid-gap: 2rem;
+}
+
+.button{
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.button__add{
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: adding;
+  background: #4943CD;
+  color: #FFFFFF;
+  font-size: 1.4rem;
+}
+
+.icon{
+  margin-right: 1rem;
+}
+
+.sorting__container{
+  grid-area: sorting;
+  display: flex;
+  align-items: center;
+  padding: 3rem 1rem ;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.form__sort{
+  width: 90%;
+}
+
+.form__title{
+  margin-bottom: 1rem;
+}
+
+.sort__select{
+  margin-right: 1rem;
+}
+
+
+.filters__container{
+  grid-area: filters;
+  background-color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.cards__container{
+  grid-area: cards;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 3%; 
+}
+
+.sorting__select{
+  font-weight: bold;
+  padding: 0.5rem;
+  width: 35%;
+  border: 1px solid gray;
+}
+
+.filters__header{
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
+.filters__form{
+  padding: 2rem;
+}
+
+.input__container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.input{
+  padding: 0.5rem;
+}
+
+.input__container:last-child{
+  margin: 0;
+}
+
+.input__name{
+  margin-bottom: 0.5rem;
+}
+
+.input__markup{
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+}
+
+.input__date{
+  margin-bottom: 1rem;
+}
+
+.input__date:last-child{
+  margin-bottom: 0;
+}
+
+.filters__select{
+  padding: 0.5rem;
+}
+
+.card{
+  font-size: 1.6rem;
+}
+
+.card__header{
+  background-color: #EDE8F5;
+  padding: 1.5rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__content{
+  background-color: #F6FAFB;
+  padding: 0.5rem 1.5rem 1rem;
+}
+
+.card__row{
+  padding: 0.5rem;
+  border-bottom: 1px solid grey;
+}
+
+.blanc__row{
+  height: 1.8rem;
+}
