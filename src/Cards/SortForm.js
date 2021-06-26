@@ -2,9 +2,9 @@ import React, {useState} from 'react'
 
 
 
+
 function SortForm({ onCreate }){
   const [value, setValue] = useState('')
-
 
   function submitHandler(event) {
     event.preventDefault()
@@ -13,8 +13,8 @@ function SortForm({ onCreate }){
 
 return(
     <form className="form__sort" onSubmit={submitHandler}>
-          <select className='sort__select' value={value} onChange={event => setValue(event.target.value)}>
-            <option defaultValue>Sort by ID: ascending</option>
+          <select className='sort__select' defaultValue="Sort by ID: ascending" value={value} onChange={event => setValue(event.target.value)}>
+            <option>Sort by ID: ascending</option>
             <option>Sort by ID: descending</option>
             <option>Sort by Number: ascending</option>
             <option>Sort by Number: descending</option>

@@ -13,6 +13,11 @@ function AddCard({ onCreate }){
     function submitHandler(event) {
         event.preventDefault()
             onCreate(valueId,valueName,valueNumber,valueDate, valueType)
+            setValueId("");
+            setValueName("");
+            setValueNumber("");
+            setValueDate("");
+            setValueType("");
         }
         
         
